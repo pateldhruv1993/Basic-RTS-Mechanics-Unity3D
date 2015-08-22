@@ -1,0 +1,105 @@
+﻿using UnityEngine;
+using System;
+using System.Collections;
+
+namespace Lab4 {
+	public class BetterCameraController : MonoBehaviour {
+
+		//Lookat target
+		public Transform target;
+		public Transform pivot;
+		public float dampen = 0.5f;
+		private UnitSelectMover unitController; 
+		private Quaternion defaultOrientation;
+		private bool follow = false;
+		float rotDir = 0;
+
+		float minFov = 35f;
+		float maxFov = 70f;
+		float sensitivity = 30f;
+
+
+		// Use this for initialization
+		void Start () {
+
+			transform.LookAt(target);
+			defaultOrientation = transform.rotation;
+			unitController = GetComponent<UnitSelectMover>();
+		}
+		
+		// Update is called once per frame
+		void Update () {
+
+			Vector3 currentUp = transform.rotation * Vector3.up;
+			Vector3 defaultUp = defaultOrientation * Vector3.up;
+			Vector3 currentRight = transform.rotation * Vector3.right;
+			Vector3 defaultRight = defaultOrientation * Vector3.right;
+
+
+			float horizAngle = Vector3.Angle(defaultRight, currentRight);
+			float vertAngle = Vector3.Angle(defaultUp, currentUp);
+//			print (currentUp + " " + defaultUp+" "+vertAngle);
+			float rotVal = 45;
+
+
+			if (Input.GetKey (KeyCode.LeftBracket) && horizAngle <= rotVal){
+				transform.RotateAround(target.position, Vector3.up, rotVal * Time.deltaTime);
+				rotDir = -1;		
+			}else if (Input.GetKey (KeyCode.RightBracket) && horizAngle <= rotVal){
+				rotDir = 1;		
+				transform.RotateAround(target.position, Vector3.up, -rotVal * Time.deltaTime);
+			}
+			
+			if (!Input.GetKey (KeyCode.LeftBracket) && !Input.GetKey (KeyCode.RightBracket)){
+				if (horizAngle > 1){
+					transform.RotateAround(target.position, Vector3.up, rotDir*rotVal*Time.deltaTime);
+				}else{
+					if (Mathf.Abs(horizAngle) <= 1){
+						transform.RotateAround(target.position, Vector3.up, rotDir*horizAngle);
+					}
+				}
+			}
+
+
+			//Scroll the camera around using WASD or cursor keys
+			float x = Input.GetAxis("Horizontal");
+			float z = Input.GetAxis("Vertical");
+			if (x != 0 || z != 0)
+				follow = false;
+
+			Vector3 disp = new Vector3(x,0,z);
+
+			disp *=dampen;
+
+			float zoomVal = Input.GetAxis("CamRotate");
+			if (vertAngle < 25 && zoomVal < 0){
+				transform.RotateAround(pivot.position, Vector3.right,  zoomVal * 15 * Time.deltaTime);
+				//zoomIn = true;
+			}else if (zoomVal > 0 && currentUp.z <= defaultUp.z){
+
+				transform.RotateAround(pivot.position, Vector3.right,  zoomVal * 15 * Time.deltaTime);
+			}
+				
+			target.position += disp;
+
+
+			Vector3? groupPos = unitController.GetGroupPos();
+			if (Input.GetKey (KeyCode.F) && (Input.GetKey (KeyCode.LeftControl) || Input.GetKey (KeyCode.RightControl ))){
+				follow = true;
+			}else if (Input.GetKey (KeyCode.F)){
+				follow = false;
+				if (groupPos.HasValue)
+					target.position = groupPos.Value; 
+			}
+
+			if (follow){
+				if (groupPos.HasValue)
+					target.position = groupPos.Value; 
+			}
+			//transform.position += disp;
+			//transform.LookAt(target);
+
+
+		}
+	}
+}

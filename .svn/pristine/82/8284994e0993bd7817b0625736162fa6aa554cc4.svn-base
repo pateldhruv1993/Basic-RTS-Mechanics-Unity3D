@@ -1,0 +1,21 @@
+﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+using Lab4;
+
+public class HiveMindAI : MonoBehaviour {
+
+	public string enemyTag;						//The string that hold a tag of the enemy - i.e. player - units
+	public string friendlyTag;					//The string that hold a tag of the friendly - i.e. HiveMind - units
+	private List<AIWithPathfinding> selectedAI; // List of selected units
+
+	// Use this for initialization
+	void Start () {
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+}

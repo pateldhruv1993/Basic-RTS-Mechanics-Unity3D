@@ -1,0 +1,432 @@
+fileFormatVersion: 2
+guid: 99e6c52476f1d254b81b9299fe09c639
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Factice006
+    100002: Factice010
+    100004: Factice043
+    100006: Factice044
+    100008: Factice047
+    100010: Factice050
+    100012: //RootNode
+    100014: SPIDER_BOT
+    100016: spider_robot_abdomen
+    100018: spider_robot_body
+    100020: spider_robot_leg_L_F_1
+    100022: spider_robot_leg_L_F_2
+    100024: spider_robot_leg_L_F_3
+    100026: spider_robot_leg_L_R_1
+    100028: spider_robot_leg_L_R_2
+    100030: spider_robot_leg_L_R_3
+    100032: spider_robot_leg_R_F_1
+    100034: spider_robot_leg_R_F_2
+    100036: spider_robot_leg_R_F_3
+    100038: spider_robot_leg_R_R_1
+    100040: spider_robot_leg_R_R_2
+    100042: spider_robot_leg_R_R_3
+    100044: spider_robot_shoulder_L_F
+    100046: spider_robot_shoulder_L_R
+    100048: spider_robot_shoulder_R_F
+    100050: spider_robot_shoulder_R_R
+    400000: Factice006
+    400002: Factice010
+    400004: Factice043
+    400006: Factice044
+    400008: Factice047
+    400010: Factice050
+    400012: //RootNode
+    400014: SPIDER_BOT
+    400016: spider_robot_abdomen
+    400018: spider_robot_body
+    400020: spider_robot_leg_L_F_1
+    400022: spider_robot_leg_L_F_2
+    400024: spider_robot_leg_L_F_3
+    400026: spider_robot_leg_L_R_1
+    400028: spider_robot_leg_L_R_2
+    400030: spider_robot_leg_L_R_3
+    400032: spider_robot_leg_R_F_1
+    400034: spider_robot_leg_R_F_2
+    400036: spider_robot_leg_R_F_3
+    400038: spider_robot_leg_R_R_1
+    400040: spider_robot_leg_R_R_2
+    400042: spider_robot_leg_R_R_3
+    400044: spider_robot_shoulder_L_F
+    400046: spider_robot_shoulder_L_R
+    400048: spider_robot_shoulder_R_F
+    400050: spider_robot_shoulder_R_R
+    4300000: SPIDER_BOT
+    7400000: walk
+    7400002: jumpAttack
+    7400004: wallJump
+    7400006: idle
+    7400008: idle
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: SPIDER_BOT
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 3
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: walk
+      takeName: Take 001
+      firstFrame: 5
+      lastFrame: 34
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Factice043
+        weight: 1
+      - path: Factice043/Factice044
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_abdomen
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_body
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1/spider_robot_leg_L_F_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1/spider_robot_leg_L_F_2/spider_robot_leg_L_F_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1/spider_robot_leg_L_R_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1/spider_robot_leg_L_R_2/spider_robot_leg_L_R_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1/spider_robot_leg_R_F_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1/spider_robot_leg_R_F_2/spider_robot_leg_R_F_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1/spider_robot_leg_R_R_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1/spider_robot_leg_R_R_2/spider_robot_leg_R_R_3
+        weight: 1
+      - path: SPIDER_BOT
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: jumpAttack
+      takeName: Take 001
+      firstFrame: 40
+      lastFrame: 69
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Factice043
+        weight: 1
+      - path: Factice043/Factice044
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_abdomen
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_body
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1/spider_robot_leg_L_F_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1/spider_robot_leg_L_F_2/spider_robot_leg_L_F_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1/spider_robot_leg_L_R_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1/spider_robot_leg_L_R_2/spider_robot_leg_L_R_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1/spider_robot_leg_R_F_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1/spider_robot_leg_R_F_2/spider_robot_leg_R_F_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1/spider_robot_leg_R_R_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1/spider_robot_leg_R_R_2/spider_robot_leg_R_R_3
+        weight: 1
+      - path: SPIDER_BOT
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: wallJump
+      takeName: Take 001
+      firstFrame: 75
+      lastFrame: 105
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Factice043
+        weight: 1
+      - path: Factice043/Factice044
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_abdomen
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_body
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1/spider_robot_leg_L_F_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1/spider_robot_leg_L_F_2/spider_robot_leg_L_F_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1/spider_robot_leg_L_R_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1/spider_robot_leg_L_R_2/spider_robot_leg_L_R_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1/spider_robot_leg_R_F_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1/spider_robot_leg_R_F_2/spider_robot_leg_R_F_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1/spider_robot_leg_R_R_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1/spider_robot_leg_R_R_2/spider_robot_leg_R_R_3
+        weight: 1
+      - path: SPIDER_BOT
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: idle
+      takeName: Take 001
+      firstFrame: 110
+      lastFrame: 229
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Factice043
+        weight: 1
+      - path: Factice043/Factice044
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_abdomen
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_body
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1/spider_robot_leg_L_F_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_F/Factice006/spider_robot_leg_L_F_1/spider_robot_leg_L_F_2/spider_robot_leg_L_F_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1/spider_robot_leg_L_R_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_L_R/Factice010/spider_robot_leg_L_R_1/spider_robot_leg_L_R_2/spider_robot_leg_L_R_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1/spider_robot_leg_R_F_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_F/Factice050/spider_robot_leg_R_F_1/spider_robot_leg_R_F_2/spider_robot_leg_R_F_3
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1/spider_robot_leg_R_R_2
+        weight: 1
+      - path: Factice043/Factice044/spider_robot_shoulder_R_R/Factice047/spider_robot_leg_R_R_1/spider_robot_leg_R_R_2/spider_robot_leg_R_R_3
+        weight: 1
+      - path: SPIDER_BOT
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
